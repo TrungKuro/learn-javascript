@@ -25,9 +25,15 @@
 
 > `document.querySelector()`
 >
-> - name_html_element
+> - name_html
 > - `.`name_class
 > - `#`name_id
+>
+> ⚠️ Tuy nhiên, nếu bạn chọn khớp với nhiều phần tử, cũng chỉ cái "đầu tiên" sẽ được chọn.
+>
+> ✅ Giải pháp là thêm `All` để chọn hết các phần tử khớp nhau. Trình duyệt sẽ lưu dưới dạng danh sách `NodeList`.
+>
+> `document.querySelectorAll()`
 
 #### Đọc và Ghi nội dung
 
@@ -59,3 +65,14 @@
 > - Để phản ứng với sự kiện, bạn cần xác định một `Hàm` thực thi bất cứ khi nào sự kiện đó xảy ra.
 >
 > ⚠️ Tuy DOM có thể lưu giữ giá trị chúng ta cần, bạn vẫn nên lưu riêng vào một biến (`const`, `let`, ...). Vì với các "biến trạng thái" (`State Variable`) ~ là một phần của "trạng thái ứng dụng" (`Application State`) - về cơ bản là tất cả data có liên quan đến ứng dụng. Chúng ta muốn tất cả data luôn có sẵn ở đâu đó trong code chứ ko chỉ ở trong DOM.
+>
+> ⚠️ Sự kiện từ "bàn phím" (`KeyBoard`) ~ có thể được xem là "sự kiện toàn cầu" (`Global Event`), bởi vì chúng không xảy ra trên một phần tử cụ thể thay vào đó là toàn bộ Document.
+>
+> `document.addEventListener()`
+
+#### Đọc và Ghi danh sách Class
+
+> `document.querySelector().classList.`
+>
+> - Dùng `add` để thêm 1 hay nhiều class mới vào danh sách hiện có.
+> - Dùng `remove` để loại bỏ 1 hay nhiều class được chỉ định.
