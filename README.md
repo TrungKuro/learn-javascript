@@ -1,6 +1,10 @@
 # learn-javascript
 
-[The Complete JavaScript Course 2025: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/)
+> 🔗 [The Complete JavaScript Course 2025: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/)
+
+## Phần 2: JavaScript Fundamentals
+
+> 📜 [Doc JavaScript Fundamental](https://jonas.io/assignments/instructions.html)
 
 ## Phần 7: JavaScript in the Browser: DOM and Events [PROJECT]
 
